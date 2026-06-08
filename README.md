@@ -1,110 +1,35 @@
-# vibe2value
-A framework for building software with AI-assisted coding using the shape → build → launch approach.
+# vibe2value base
 
-Working notes from building software with AI.
+A cloneable starting point for a new project built with AI assisted coding, using the vibe2value shape+build+launch framework. Clone this, rename it and fill it in. There is no application code yet on purpose: the value here is the scaffold and the conventions, so a person or an AI picks up the project from a clear, written starting point.
 
-The **vibe2value framework** describes how to move from early AI assisted experimentation to production systems that real users can rely on.
+The framework this is built around lives at https://vibe2value.com .
 
-The thinking is organised into three stages.
+## What you get
 
-shape → build → launch
+- A [`knowledge-base/`](knowledge-base/README.md) laid out for the framework: `product/` (what it is), `shape-build-launch/` (one file per idea across the three phases) and `system/` (ways of working, architecture, decisions, environments, testing).
+- A [`CLAUDE.md`](CLAUDE.md) that points an AI assistant at the knowledge base and the working rules.
+- Fully written `system/ways-of-working/` (branching and commit conventions). Everything else is a stub that names the one question it will answer.
+- A stack-neutral `system/architecture/stack/`: the base picks no tools for you, it gives you the place and the template to record the stack you choose and the assumptions it puts on the build.
+- An MIT [`LICENSE`](LICENSE) and a starter `.gitignore`.
 
-## Topics
+## Start a new project from it
 
-AI assisted coding  
-software development workflow  
-AI software development  
-vibe coding  
-software architecture decisions  
-shape → build → launch framework
+1. Click **Use this template** on GitHub to create a fresh repo with clean history, or clone this one and re-point the remote.
+2. Replace `PROJECT_NAME` everywhere with your project's name:
+   ```bash
+   grep -rl PROJECT_NAME . --exclude-dir=.git | xargs sed -i 's/PROJECT_NAME/your-name/g'
+   ```
+3. Work through Shape first: fill in [`knowledge-base/shape-build-launch/shape/`](knowledge-base/shape-build-launch/shape/README.md) and [`knowledge-base/product/`](knowledge-base/product/README.md). Each stub names the one question it answers.
+4. Record the stack you choose in [`knowledge-base/system/architecture/stack/`](knowledge-base/system/architecture/stack/README.md), one file per tool, and the call as an ADR in [`knowledge-base/system/decisions/`](knowledge-base/system/decisions/README.md).
+5. Add the app code when Build starts. Wire the toolchain commands into `CLAUDE.md`.
 
-Each stage captures decisions encountered while building software with **AI assisted coding**.
+## How to work in it
 
-The framework is documented through a set of short working notes that describe real decision points encountered during a build.
-
-Full working notes:  
-https://vibe2value.com
-
----
-
-## The Three Stages
-
-### Shape
-
-Shape is where the build is clarified before implementation begins.
-
-This stage focuses on:
-
-- naming the real user  
-- understanding the system shape  
-- identifying the real differentiator  
-- defining boundaries before complexity spreads  
-
-Working notes:  
-https://vibe2value.com/tag/shape/
-
----
-
-### Build
-
-Build is where the system becomes real.
-
-AI assisted coding can accelerate development, but clarity must stay intact.
-
-This stage focuses on:
-
-- protecting the real differentiator  
-- avoiding unnecessary complexity  
-- making deliberate buy vs build choices  
-- keeping the system understandable  
-
-Working notes:  
-https://vibe2value.com/tag/build/
-
----
-
-### Launch
-
-Launch is where ownership becomes real.
-
-Shipping software is not only a deployment decision. It is a confidence and responsibility decision.
-
-This stage focuses on:
-
-- defining what “ready” means  
-- naming risks before users find them  
-- ensuring iteration increases value  
-- being comfortable putting your name on the release  
-
-Working notes:  
-https://vibe2value.com/tag/launch/
-
----
-
-## Why This Exists
-
-AI assisted coding makes it possible to move quickly from idea to working software.
-
-Speed alone does not guarantee useful outcomes.
-
-The vibe2value framework exists to help teams keep decisions tied to real users, real constraints and real outcomes while using AI tools.
-
-The working notes document decisions encountered during real builds.
-
-They are intentionally short and practical.
-
----
-
-## Workshops
-
-If you are building something with AI assisted coding and want a structured place to think through a difficult decision, workshops are available.
-
-https://vibe2value.com/workshops/
-
----
+- Start at the README in any folder. It links every document below it.
+- Each document does one job and answers one question. Keep documents short, plain and current.
+- Fix a document in the same change that made it wrong. The git history is the decision log.
+- Write with no emdashes and no Oxford comma, plain enough for a person or an AI to read.
 
 ## License
 
-MIT License
-
-See the LICENSE file for details.
+MIT, see [LICENSE](LICENSE).
