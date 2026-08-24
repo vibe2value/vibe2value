@@ -15,4 +15,4 @@ The folders are ordered by the path a change takes. It starts as a piece of work
 5. [`environments/`](environments/README.md) **where it runs and how it gets there.** Local, develop, staging and main, with secrets and deploy.
 6. [`running/`](running/README.md) **what happens when it breaks.** How a failure surfaces and what comes to a person.
 
-Everything except `ways-of-working/` is a stub for now.
+`ways-of-working/` is fully written. In `running/` the method is written and PROJECT_NAME's own answer is not. Everything else is a stub that names its question.
