@@ -10,7 +10,7 @@ Most files are stubs for now. Each names the one question it will answer. The `s
 
 - [`product/`](product/README.md) what PROJECT_NAME is. Spec, assumptions, intentional gaps and open questions. Mirrors the public page at <link to your public project page> .
 - [`shape-build-launch/`](shape-build-launch/README.md) your Shape, Build and Launch decisions. One file per idea across the vibe2value framework.
-- [`system/`](system/README.md) how the project runs: ways of working, architecture, decisions, environments and testing.
+- [`system/`](system/README.md) how the project runs, in the order a change moves: ways of working, architecture, decisions, testing, environments and running.
 
 ## How to use it
 
