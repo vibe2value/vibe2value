@@ -4,7 +4,7 @@
 
 Everything to do with the PROJECT_NAME project lives here: what it is, how it is built and how we work. It is written to be read by both people and AI. Keep documents short, plain and current.
 
-Most files are stubs for now. Each names the one question it will answer. Two areas are further along: `system/ways-of-working/` is fully written and `system/running/` carries the method with your own answer still to fill in.
+Most files are stubs for now, each naming the one question it will answer. Some carry the method with your own answer still to fill in. A few are fully written. [`system/README.md`](system/README.md) explains the three states.
 
 ## Map
 
