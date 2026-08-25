@@ -33,6 +33,28 @@ Then run it on whatever you are building:
 /shape-build-launch:guide
 ```
 
+## How you know it is working
+
+Filling this in is meant to change how well an AI can pick your project up. That is measurable, so measure it before you start and again as you go.
+
+Ask an AI to work through the knowledge base and fill it in without asking you anything:
+
+```
+Work through knowledge-base/ and fill it in, so the next person or the next AI can
+pick this project up from what is written there. Do not ask me anything, make the
+best call you can and keep going.
+```
+
+Then read what it wrote about your project and count two things.
+
+- **Invented.** Statements about your project that are not true. You are the only person who can spot these, because it is your project.
+- **Named gaps.** Places it said something is not decided yet, rather than filling the space with something plausible.
+- **Size.** How many words the knowledge base holds. `find knowledge-base -name '*.md' | xargs wc -w` gives you it.
+
+**Invented should fall to zero.** That is the number that matters. Named gaps should rise while you are filling the base in, then fall as you answer them. Size only matters when it stops being something you can hand to an AI in one go.
+
+Record both in [`knowledge-base/README.md`](knowledge-base/README.md) with the date. Take the first reading before you write anything, so you have something to compare against.
+
 ## Start a new project
 
 1. Click **Use this template** on GitHub for a fresh repo with clean history.
