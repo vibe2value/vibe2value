@@ -8,7 +8,20 @@ Guidance for AI assistants working in the PROJECT_NAME repo. Keep it short. The 
 
 PROJECT_NAME is one line saying what it is and who it is for. Fill this in once Shape is done; `knowledge-base/product/spec.md` is the longer version.
 
-This repo starts from the vibe2value base. The knowledge base holds the questions. The method for answering them is the vibe2value skill, not a document in this repo. See the root [`README.md`](README.md).
+This repo starts from the vibe2value base. The knowledge base holds the questions. The method for answering them is a skill, not a document in this repo. See the root [`README.md`](README.md).
+
+## The method
+
+Answering a stub is a shape+build+launch decision, so use the `shape-build-launch` skill for it. The skill can surface on its own, but that is a per-message judgement rather than a guarantee, so name it: say "use the shape-build-launch skill", or run `/shape-build-launch:guide`.
+
+If it is not installed:
+
+```
+/plugin marketplace add vibe2value/claude-plugins
+/plugin install shape-build-launch@vibe2value
+```
+
+The skill covers Shape, Build and Launch. It does not reach `knowledge-base/system/` yet, so those answers are unaided for now.
 
 ## Read these first
 
