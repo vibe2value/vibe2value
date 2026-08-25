@@ -37,3 +37,5 @@ If invented is not falling, the answers being written are not the answers it nee
 ## How to use it with AI
 
 Ground every prompt about PROJECT_NAME in these files. Paste the relevant file, or the whole folder on a fresh thread, so the assistant works from the same product and the same decisions you did. The repo root [`CLAUDE.md`](../CLAUDE.md) points here for exactly this reason.
+
+**Stuck on this?** [Work through it on vibe2value.com](https://vibe2value.com/how-would-you-know-if-any-of-this-worked/)
