@@ -1,27 +1,56 @@
 # vibe2value base
 
-A cloneable starting point for a new project built with AI assisted coding, using the vibe2value shape+build+launch framework. Clone this, rename it and fill it in. There is no application code yet on purpose: the value here is the scaffold and the conventions, so a person or an AI picks up the project from a clear, written starting point.
+A starting point for a project built with AI, using the vibe2value framework.
 
-The framework this is built around lives at https://vibe2value.com .
+**This repo holds questions, not answers.** Every file in `knowledge-base/` names one thing that has to be discovered about your project and leaves the space for what you find. There is no application code and no method written down in here, on purpose.
 
-## What you get
+**The method lives in a skill.** How to decide, what a good answer looks like and how to tell when yours is not good enough yet. The skill is versioned on its own and improves without you touching your repo.
 
-- A [`knowledge-base/`](knowledge-base/README.md) laid out for the framework: `product/` (what it is), `shape-build-launch/` (one file per idea across the three phases) and `system/` (ways of working, architecture, decisions, testing, environments, running).
-- A [`CLAUDE.md`](CLAUDE.md) that points an AI assistant at the knowledge base and the working rules.
-- Every file in `knowledge-base/` is in one of three states, explained in [`system/README.md`](knowledge-base/system/README.md): fully written, method written with your answer to fill in, or a stub naming the one question it will answer.
-- A stack-neutral `system/architecture/stack/`: the base picks no tools for you, it gives you the place and the template to record the stack you choose and the assumptions it puts on the build.
+Two halves. The repo is yours. The skill is ours.
+
+The framework behind both is at https://vibe2value.com .
+
+## What is in here
+
+- [`knowledge-base/`](knowledge-base/README.md) the only folder, laid out for the framework: `product/` what it is, `shape-build-launch/` one file per idea and `system/` how it is built and run.
+- [`CLAUDE.md`](CLAUDE.md) points an AI assistant at the knowledge base and the working rules.
 - An MIT [`LICENSE`](LICENSE) and a starter `.gitignore`.
 
-## Start a new project from it
+Every file is in one of two states, explained in [`system/README.md`](knowledge-base/system/README.md). Fully written means the answer ships with the base. A stub names its one question and nothing else.
 
-1. Click **Use this template** on GitHub to create a fresh repo with clean history, or clone this one and re-point the remote.
-2. Replace `PROJECT_NAME` everywhere with your project's name:
+Nothing here picks your stack. `system/architecture/stack/` gives you the place to record what you chose and what it commits you to.
+
+## Install the skill
+
+```
+/plugin marketplace add vibe2value/claude-plugins
+/plugin install shape-build-launch@vibe2value
+```
+
+Then run it on whatever you are building:
+
+```
+/shape-build-launch:guide
+```
+
+## Start a new project
+
+1. Click **Use this template** on GitHub for a fresh repo with clean history.
+2. Replace `PROJECT_NAME` with your project's name:
    ```bash
    grep -rl PROJECT_NAME . --exclude-dir=.git | xargs sed -i 's/PROJECT_NAME/your-name/g'
    ```
-3. Work through Shape first: fill in [`knowledge-base/shape-build-launch/shape/`](knowledge-base/shape-build-launch/shape/README.md) and [`knowledge-base/product/`](knowledge-base/product/README.md). Each stub names the one question it answers.
-4. Record the stack you choose in [`knowledge-base/system/architecture/stack/`](knowledge-base/system/architecture/stack/README.md), one file per tool, and the call as an ADR in [`knowledge-base/system/decisions/`](knowledge-base/system/decisions/README.md).
-5. Add the app code when Build starts. Wire the toolchain commands into `CLAUDE.md`.
+3. Install the skill and start with Shape. The skill asks the questions. You bring the answers. Each one lands in the file that names it.
+4. Record the stack you choose in [`system/architecture/stack/`](knowledge-base/system/architecture/stack/README.md), one file per tool, with the call written up as an ADR in [`system/decisions/`](knowledge-base/system/decisions/README.md).
+5. Add the app code when Build starts, then wire the toolchain commands into `CLAUDE.md`.
+
+## What the skill does not cover yet
+
+The skill answers Shape, Build and Launch. It does not yet cover `system/`, which is everything about getting the project running and keeping it there.
+
+Those stubs still name the right questions. Until the skill reaches them you are answering them unaided, so treat anything an AI writes into `system/` as a first draft rather than a decision.
+
+This is a known gap and it is named here rather than left to be discovered.
 
 ## How to work in it
 
