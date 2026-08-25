@@ -7,3 +7,5 @@
 **Question this file answers:** What has been decided but deliberately not built yet, and what unpauses each one?
 
 A deferred decision is decided in principle, with the work paused on timing. That is different from an open question, which is not yet decided (see [`open-questions.md`](open-questions.md)). Each entry names the decision and the condition that unpauses it.
+
+**Stuck on this?** [Work through it on vibe2value.com](https://vibe2value.com/where-do-you-stop-for-now/)
