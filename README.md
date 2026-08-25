@@ -6,9 +6,9 @@ The framework this is built around lives at https://vibe2value.com .
 
 ## What you get
 
-- A [`knowledge-base/`](knowledge-base/README.md) laid out for the framework: `product/` (what it is), `shape-build-launch/` (one file per idea across the three phases) and `system/` (ways of working, architecture, decisions, environments, testing).
+- A [`knowledge-base/`](knowledge-base/README.md) laid out for the framework: `product/` (what it is), `shape-build-launch/` (one file per idea across the three phases) and `system/` (ways of working, architecture, decisions, testing, environments, running).
 - A [`CLAUDE.md`](CLAUDE.md) that points an AI assistant at the knowledge base and the working rules.
-- Fully written `system/ways-of-working/` (branching and commit conventions). Everything else is a stub that names the one question it will answer.
+- Every file in `knowledge-base/` is in one of three states, explained in [`system/README.md`](knowledge-base/system/README.md): fully written, method written with your answer to fill in, or a stub naming the one question it will answer.
 - A stack-neutral `system/architecture/stack/`: the base picks no tools for you, it gives you the place and the template to record the stack you choose and the assumptions it puts on the build.
 - An MIT [`LICENSE`](LICENSE) and a starter `.gitignore`.
 
