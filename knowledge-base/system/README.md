@@ -9,16 +9,15 @@ The folders are ordered by the path a change takes. It starts as a piece of work
 ## Contents
 
 1. [`ways-of-working/`](ways-of-working/README.md) **how a change moves.** What counts as one change and how it gets from an idea to live. Fully written.
-2. [`architecture/`](architecture/README.md) **what it is made of.** How the system fits together, plus one file per tool in the stack. Method written.
-3. [`decisions/`](decisions/README.md) **why it is this way.** Architecture decision records, for the calls that are costly to reverse. Method written, records to add.
-4. [`testing/`](testing/README.md) **what proves it works.** What is tested, at what level and what is deliberately not tested. Method written.
-5. [`environments/`](environments/README.md) **where it runs and how it gets there.** Local, develop, staging and main, with secrets and deploy. Method written.
-6. [`running/`](running/README.md) **what happens when it breaks.** How a failure surfaces and what comes to a person. Method written.
+2. [`architecture/`](architecture/README.md) **what it is made of.** How the system fits together, plus one file per tool in the stack. Stub.
+3. [`decisions/`](decisions/README.md) **why it is this way.** Architecture decision records, for the calls that are costly to reverse. Fully written, records to add.
+4. [`testing/`](testing/README.md) **what proves it works.** What is tested, at what level and what is deliberately not tested. Stub.
+5. [`environments/`](environments/README.md) **where it runs and how it gets there.** Local, develop, staging and main, with secrets and deploy. Stub.
+6. [`running/`](running/README.md) **what happens when it breaks.** How a failure surfaces and what comes to a person. Stub.
 
-## The three states a file can be in
+## The two states a file can be in
 
-The difference matters, because two of them are your work and one of them is not.
+The difference matters, because one of them is your work and one of them is not.
 
 - **Fully written.** The answer ships with the base. Change it if PROJECT_NAME needs something else and write the change down here.
-- **Method written.** You are told how to decide, not what to decide. The file names what to write down and how to tell when it is good enough. Your answer goes at the bottom.
-- **Stub.** The file names the one question it will answer and nothing more. A stub means the base has not told you how yet.
+- **Stub.** The file names the one question it will answer and nothing more. The answer is yours to write.

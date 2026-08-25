@@ -8,7 +8,7 @@ Guidance for AI assistants working in the PROJECT_NAME repo. Keep it short. The 
 
 PROJECT_NAME is one line saying what it is and who it is for. Fill this in once Shape is done; `knowledge-base/product/spec.md` is the longer version.
 
-This repo starts from the vibe2value base, so the knowledge base is already scaffolded for the shape+build+launch framework. Fill in the stubs as the project takes shape.
+This repo starts from the vibe2value base. The knowledge base holds the questions. The method for answering them is the vibe2value skill, not a document in this repo. See the root [`README.md`](README.md).
 
 ## Read these first
 
@@ -17,6 +17,8 @@ This repo starts from the vibe2value base, so the knowledge base is already scaf
 - `knowledge-base/system/architecture/` the stack and how the pieces fit.
 
 Ground every change in the knowledge base. If a decision is not written down there, that is a gap to close, not a detail to invent.
+
+Where you cannot answer a stub from what is in the repo, write down that it is not decided yet and say what you would need to decide it. Do not fill the space with a plausible answer. A named gap is worth more than a confident guess.
 
 ## Working rules
 
